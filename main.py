@@ -8,21 +8,21 @@ def mult(n1, n2):
 
 class multTestCase(unittest.TestCase):
   
-    def test_positive_numbers(self):
-        result = mult(5, 10)
-        self.assertEqual(result, 50)
+    def positive_numbersTest(self):
+        result = mult(10, 20)
+        self.assertEqual(result, 200)
 
-    def test_negative_numbers(self):
-        result = mult(-5, -10)
-        self.assertEqual(result, 50)
+    def negative_numbersTest(self):
+        result = mult(-6, -6)
+        self.assertEqual(result, 36)
 
-    def test_zero(self):
-        result = mult(0, 10)
+    def zeronumbersTest(self):
+        result = mult(0, 100)
         self.assertEqual(result, 0)
 
-    def test_equal_numbers(self):
-        result = mult(5, 5)
-        self.assertEqual(result,25)
+    def equal_numbersTest(self):
+        result = mult(7, 7)
+        self.assertEqual(result, 49)
 
 if __name__ == '__main__':
     unittest.main()
